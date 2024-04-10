@@ -37,3 +37,12 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- lsps 
+require'lspconfig'.gdscript.setup{}
+require'lspconfig'.jedi_language_server.setup{}
+-- tabs
+vim.o.tabstop = 4 -- A TAB character looks like 4 spaces
+vim.o.expandtab = false -- Pressing the TAB key will insert spaces instead of a TAB character
+vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
+vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
