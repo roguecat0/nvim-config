@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-	theme = "gruvbox",
+	theme = "doomchad",
   nvdash = {
     load_on_startup = true,
   },
@@ -27,7 +27,7 @@ M.ui = {
   --   }
   -- }
   changed_themes = {
-    gruvbox = {
+    doomchad = {
       base_30 = {
         grey = "#a3b8ef",
       },
