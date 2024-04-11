@@ -96,3 +96,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
     bufmap('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>')
   end
 })
+

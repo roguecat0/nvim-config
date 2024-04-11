@@ -1,5 +1,4 @@
 -- add to nvim data
--- remember :TSInstall gdscript
 
 local util = require 'lspconfig.util'
 
@@ -15,6 +14,9 @@ return {
     cmd = cmd,
     filetypes = { 'gd', 'gdscript', 'gdscript3' },
     root_dir = util.root_pattern('project.godot', '.git'),
+    on_attach = function ()
+      vim.api.nvim_command('echo serverstart("127.0.0.1:7001")')
+    end
   },
   docs = {
     description = [[
