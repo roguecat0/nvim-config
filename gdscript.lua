@@ -1,4 +1,5 @@
 -- add to nvim data
+-- remember :TSInstall gdscript
 
 local util = require 'lspconfig.util'
 
