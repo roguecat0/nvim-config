@@ -20,7 +20,7 @@ return {
   	"williamboman/mason.nvim",
   	opts = {
   		ensure_installed = {
-  			"lua-language-server", "jedi-language-server",
+  			"lua-language-server", "jedi-language-server","rust-analyzer",
   		},
   	},
   },
