@@ -21,15 +21,13 @@ M.ui = {
     order = nil,
     modules = nil,
   },
-  -- hl_override = {
-  --   MyHighlightGroup = {
-  --     grey = "white",
-  --   }
-  -- }
+  hl_override = {
+    LineNr = { fg = "yellow" },
+  },
   changed_themes = {
     doomchad = {
       base_30 = {
-        grey = "#a3b8ef",
+        -- grey = "#a3b8ef",
       },
     },
   }
