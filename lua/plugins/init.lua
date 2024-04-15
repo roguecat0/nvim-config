@@ -6,6 +6,10 @@ return {
       require "configs.conform"
     end,
   },
+  {
+    "ThePrimeagen/vim-be-good",
+    lazy=false,
+  },
 
   -- These are some examples, uncomment them if you want to see them work!
   -- {
@@ -183,5 +187,6 @@ return {
       -- Install golang specific config
       require('dap-go').setup()
     end,
-  }
+  },
+
 }
