@@ -114,3 +114,15 @@ function CiRound:name()
 end
 
 return CiRound
+-- ci bug fix
+    -- local new_lines = {}
+    -- if lines[0] ~= nil then
+    --     new_lines[#new_lines+1] = lines[0]
+    --     for i=1,#lines do
+    --         new_lines[#new_lines+1] = lines[i]
+    --     end
+    -- else
+    --     new_lines = lines
+    -- end
+    -- log.info(string.format("Buffer:Rendering id:%d , id+lines: %d, type_buf: %s, type_lines: %s\nTable: %s\nNew Table: %s",idx, idx + #lines, type(self.bufh), type(lines), vim.inspect(lines), vim.inspect(new_lines)))
+    -- vim.api.nvim_buf_set_lines(self.bufh, idx, idx + #new_lines, false, new_lines)
