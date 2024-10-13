@@ -33,7 +33,7 @@ return {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
-       "gdscript", "python", "rust",
+       "gdscript", "python", "rust","lua","markdown", "markdown_inline"
   		},
   	},
   },
