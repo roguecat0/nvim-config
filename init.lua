@@ -42,6 +42,6 @@ end)
 -- lsps 
 require'lspconfig'.gdscript.setup{}
 require'lspconfig'.jedi_language_server.setup{}
--- require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 --------------------------------------------------------------
 vim.wo.relativenumber = true
