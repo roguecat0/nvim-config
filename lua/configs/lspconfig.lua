@@ -21,3 +21,19 @@ lspconfig.tsserver.setup {
   on_init = on_init,
   capabilities = capabilities,
 }
+
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = {"gopls"},
+  filetypes = {"go", "gomod", "gowork", "gotmpl"},
+  settings = {
+    gopls = {
+      completeUnimported = true,
+      usePlaceholders = true,
+      analyses = {
+        unusedparams = true,
+      },
+    },
+  },
+}
