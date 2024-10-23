@@ -8,7 +8,7 @@ return {
   },
   {
     "ThePrimeagen/vim-be-good",
-    lazy=false,
+    lazy = false,
   },
 
   -- These are some examples, uncomment them if you want to see them work!
@@ -21,27 +21,27 @@ return {
   },
 
   {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  			"lua-language-server", "jedi-language-server","rust-analyzer","gopls"
-  		},
-  	},
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server", "jedi-language-server", "rust-analyzer", "gopls"
+      },
+    },
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-       "gdscript", "python", "rust","lua","markdown", "markdown_inline"
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "gdscript", "python", "rust", "lua", "markdown", "markdown_inline", "go"
+      },
+    },
   },
   -- custom
   {
     -- NOTE: Yes, you can install new plugins here!
     'mfussenegger/nvim-dap',
-    lazy= false,
+    lazy = false,
     -- NOTE: And you can specify dependencies as well
     dependencies = {
       -- Creates a beautiful debugger UI
@@ -145,9 +145,9 @@ return {
             disconnect = '⏏',
           },
         },
-        layouts = { 
+        layouts = {
           -- {
-          --   elements = { 
+          --   elements = {
           --   {
           --       id = "scopes",
           --       size = 0.25
@@ -163,15 +163,15 @@ return {
           --     } },
           --   position = "left",
           --   size = 40
-          -- },  
+          -- },
           {
             elements = { {
-                id = "repl",
-                size = 0.75
-              }, {
-                id = "console",
-                size = 0.25
-              } },
+              id = "repl",
+              size = 0.75
+            }, {
+              id = "console",
+              size = 0.25
+            } },
             position = "bottom",
             size = 35
           } }
