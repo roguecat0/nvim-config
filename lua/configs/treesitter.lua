@@ -1,7 +1,7 @@
 local options = {
   		ensure_installed = {
   			"vim", "lua", "vimdoc",
-       "html", "css", "python","markdown"
+        "html", "css", "python","markdown"
   		},
 }
 return options
