@@ -28,4 +28,8 @@ return {
       return require "configs.gitsigns"
     end,
   },
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
+  },
 }
