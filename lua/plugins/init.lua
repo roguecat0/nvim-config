@@ -66,4 +66,9 @@ return {
       require("onload_mappings").dap_python()
     end,
   },
+  -- Games
+  {
+    "dendyxyz/vim-be-better",
+    lazy = false,
+  },
 }
