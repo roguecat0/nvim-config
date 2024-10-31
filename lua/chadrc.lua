@@ -20,7 +20,7 @@ M.nvdash = {
   load_on_startup = true,
 }
 
-M.mason = { pkgs = { "pyright" } }
+M.mason = { pkgs = {} }
 -- print "lol"
 
 return M
