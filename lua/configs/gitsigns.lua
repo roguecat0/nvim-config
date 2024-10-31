@@ -7,10 +7,10 @@ local function gitsigns_mapping(bufnr)
     vim.keymap.set(mode, l, r, opts)
   end
 
-  map("n", "<leader>gp", gitsigns.preview_hunk, { desc = "gitsigns: preview hunk" })
-  map("n", "<leader>gr", gitsigns.reset_hunk, { desc = "gitsigns: reset hunk" })
-  map("n", "<leader>gS", gitsigns.stage_buffer, { desc = "gitsigns: stage buffer" })
-  map("n", "<leader>gR", gitsigns.reset_buffer, { desc = "gitsigns: reset buffer" })
+  map("n", "<leader>gp", gitsigns.preview_hunk, { desc = "gitsigns preview hunk" })
+  map("n", "<leader>gr", gitsigns.reset_hunk, { desc = "gitsigns reset hunk" })
+  map("n", "<leader>gS", gitsigns.stage_buffer, { desc = "gitsigns stage buffer" })
+  map("n", "<leader>gR", gitsigns.reset_buffer, { desc = "gitsigns reset buffer" })
 end
 
 local options = {
