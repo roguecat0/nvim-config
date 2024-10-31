@@ -16,8 +16,11 @@ M.base46 = {
 M.ui = {
   telescope = { style = "bordered" },
 }
-M.nvdash.load_on_startup = true
+M.nvdash = {
+  load_on_startup = true,
+}
 
 M.mason = { pkgs = { "pyright" } }
+-- print "lol"
 
 return M
