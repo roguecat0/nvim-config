@@ -20,7 +20,7 @@ M.nvdash = {
   load_on_startup = true,
 }
 
-M.mason = { pkgs = {} }
+M.mason = { pkgs = { "debugpy" } }
 -- print "lol"
 
 return M
