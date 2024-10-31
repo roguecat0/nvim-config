@@ -13,6 +13,11 @@ M.base46 = {
   -- 	["@comment"] = { italic = true },
   -- },
 }
+M.ui = {
+  telescope = { style = "bordered" },
+}
+M.nvdash.load_on_startup = true
+
 M.mason = { pkgs = { "pyright" } }
 
 return M
