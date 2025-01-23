@@ -5,7 +5,6 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
 
 -- lsp - shortcut config
 -- Show diagnostics in a floating window
@@ -59,3 +58,17 @@ vim.api.nvim_create_autocmd('LspAttach', {
     bufmap('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>')
   end
 })
+
+-- nice from prime
+map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected down" })
+map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected up" })
+
+map("x", "<leader>pp", [["_dP]])
+map({ "n", "v" }, "<leader>y", [["+y]])
+map("n", "<leader>Y", [["+Y]])
+
+
+map("n", "<leader>k", "<cmd>cnext<CR>zz")
+map("n", "<leader>j", "<cmd>cprev<CR>zz")
+
+

@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
 
+
 -- load plugins
 require("lazy").setup({
   {
@@ -45,3 +46,21 @@ require'lspconfig'.jedi_language_server.setup{}
 -- require'lspconfig'.rust_analyzer.setup{}
 --------------------------------------------------------------
 vim.wo.relativenumber = true
+
+require 'nvim-treesitter.configs'.setup { ... }
+
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.blade = {
+    install_info = {
+        url = "https://github.com/EmranMR/tree-sitter-blade",
+        files = { "src/parser.c" },
+        branch = "main",
+    },
+    filetype = "blade",
+}
+
+vim.filetype.add({
+    pattern = {
+        [".*%.blade%.php"] = "blade",
+    },
+})
