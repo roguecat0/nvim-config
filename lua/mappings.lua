@@ -13,6 +13,9 @@ map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "window right" })
 map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "window down" })
 map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "window up" })
 
+-- file navigation
+map("n", "<S-l>", "<cmd>bnext<CR>")
+map("n", "<S-h>", "<cmd>bprevious<CR>")
 -- fugitive
 map("n", "<leader>gg", "<cmd> Git<CR>", { desc = "Git status" })
 -- nice from prime
