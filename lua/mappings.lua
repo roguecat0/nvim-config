@@ -8,6 +8,9 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 -- map("i", "jk", "<ESC>")
 
 
+-- file navigation
+map("n", "<S-l>", "<cmd>bnext<CR>")
+map("n", "<S-h>", "<cmd>bprevious<CR>")
 -- fugitive
 map("n", "<leader>gg", "<cmd> Git<CR>", { desc = "Git status" })
 -- nice from prime
