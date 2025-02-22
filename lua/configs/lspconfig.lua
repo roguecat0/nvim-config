@@ -5,7 +5,7 @@ require("onload_mappings").lsp()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "pyright", "rust_analyzer" } -- "html", "cssls","jedi_language_server"
+local servers = { "pyright", "rust_analyzer", "tflint", "terraformls", "tflint" } -- "html", "cssls","jedi_language_server"
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
