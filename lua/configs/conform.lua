@@ -3,7 +3,8 @@ local options = {
     -- lua = { "stylua" },
     python = { "ruff_format" },
     rust = { "rustfmt" },
-    terraform = { "terraform_fmt" }
+    terraform = { "terraform_fmt" },
+    go = { "gofmt" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
