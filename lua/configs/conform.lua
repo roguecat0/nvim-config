@@ -5,8 +5,10 @@ local options = {
     rust = { "rustfmt" },
     terraform = { "terraform_fmt" },
     go = { "gofmt" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    typescript = { "prettier" },
+    javascript = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
   },
 
   format_on_save = {
