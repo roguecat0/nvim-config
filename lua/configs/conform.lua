@@ -3,8 +3,12 @@ local options = {
     -- lua = { "stylua" },
     python = { "ruff_format" },
     rust = { "rustfmt" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    terraform = { "terraform_fmt" },
+    go = { "gofmt" },
+    typescript = { "prettier" },
+    javascript = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
   },
 
   format_on_save = {
