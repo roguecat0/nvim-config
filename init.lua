@@ -34,6 +34,11 @@ require "nvchad.autocmds"
 require "autcmds"
 require "file_types"
 
+-- allow per-project .nvim.lua or .exrc files
+vim.o.exrc = true
+-- make it safe: only trusted files run without confirmation
+vim.o.secure = true
+
 vim.schedule(function()
   require "mappings"
 end)
