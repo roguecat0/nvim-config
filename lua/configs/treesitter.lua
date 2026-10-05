@@ -4,6 +4,7 @@ local options = {
     "lua",
     "vimdoc",
     "html",
+    "javascript",
     "css",
     "python",
     "markdown",
